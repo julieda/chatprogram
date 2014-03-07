@@ -1,11 +1,11 @@
 <h1> Welcome to chatprogram</p>
 <%= form_for :post do |f| %>
 	<p>
-    <%= f.text_area $message, :size=>"40x20" %>
+    <%= f.text_area :message, :size=>"40x20" %>
   	</p>
 
  	<p>
-    <%= f.text_field $message, :size=>"40"%> <%= f.submit :broadcast_string %>
+    <%= f.text_field :message, :size=>"40"%> <%= f.submit :broadcast_string %>
  	</p>
   <p>
    
