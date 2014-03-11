@@ -1,4 +1,4 @@
-<h1> Welcome to chatprogram</p>
+<h1> Chatprogram</p>
 <%= form_for :post do |f| %>
 	<p>
     <%= f.text_area :message, :size=>"40x20" %>
@@ -11,3 +11,5 @@
    
   </p>
 <% end %>
+
+<%= link_to 'Back', users_path %>

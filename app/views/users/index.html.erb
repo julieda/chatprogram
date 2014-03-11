@@ -3,7 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th>Email</th>
+  
 
    
       <th></th>
@@ -13,19 +13,23 @@
   </thead>
 
   <tbody>
+    <th>Email</th>
     <% @users.each do |user| %>
       <tr>
         <td><%= user.email %></td>
        <!-- <td><%= user.crypted_password %></td> -->
         <!--<td><%= user.salt %></td> -->
-        <td><%= link_to 'Show', user %></td>
+       <!-- <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
   </tbody>
+
+
 </table>
+<%= link_to 'Chat', "/posts/index" %>
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+
