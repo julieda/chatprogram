@@ -28,7 +28,18 @@
 
 
 </table>
-<%= link_to 'Chat', "/posts/index" %>
+
+<div id="nav">
+    <% if current_user %>
+    <form action="/posts/index">
+    <input type="submit" value="Go to chat">
+</form>
+
+    <% else %>
+      <%= link_to "Register", new_user_path %> |
+      <%= link_to "Login", :login %>
+    <% end %>
+  </div>
 
 <br>
 
